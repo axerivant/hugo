@@ -1,38 +1,28 @@
-# create-svelte
+# hug
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## what?
 
-## Creating a project
+-   Hugo is a web based ePUB reader.
+-   It allows users to store, organize and view their ePUB files.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## why?
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+-   Existing solutions are often platform locked (Apple Books) or outdated (Readium).
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## technical details
 
-## Developing
+-   The web app is built on SvelteKit.
+    -   epub.js will be used as the viewer.
+-   Firebase is used for backend functionality.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## goals
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+1. Create the basic structure
+    - Auth
+    - Storage
+    - DB
+    - UI
+2. Improve and polish the viewer.
+    - Custom UI
+    - Settings (Fonts, Themes, and etc.)
+3. ...
